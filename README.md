@@ -1,6 +1,6 @@
 # orders-api + Claude Code setup (example)
 
-A small, working Node/TypeScript API with a complete Claude Code setup around it. It shows what a delivered setup looks like: every file below is real and tested, nothing is a placeholder except the GitHub token, which you provide.
+A small, working Node/TypeScript API with a complete Claude Code setup around it. It is a reference setup: every file below is real and tested, nothing is a placeholder except the GitHub token, which you provide.
 
 ## What is inside
 
