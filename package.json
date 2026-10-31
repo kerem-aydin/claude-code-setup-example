@@ -1,0 +1,13 @@
+{
+  "name": "orders-api",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Small orders HTTP API used as the example codebase for a Claude Code setup.",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "start": "node src/server.ts",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "test:hooks": "node scripts/test-hooks.mjs"
+  }
+}

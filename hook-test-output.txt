@@ -1,0 +1,21 @@
+$ npm test
+# tests 8
+# pass 8
+# fail 0
+
+$ npm run test:hooks
+PASS  BLOCK  guard.mjs               rm -rf ./dist                           rm-rf
+PASS  BLOCK  guard.mjs               git push --force origin main            force-push
+PASS  BLOCK  guard.mjs               git push -f                             force-push
+PASS  BLOCK  guard.mjs               git reset --hard HEAD~1                 reset-hard
+PASS  BLOCK  guard.mjs               cat .env                                env-in-shell
+PASS  BLOCK  guard.mjs               Read .env                               env-file
+PASS  BLOCK  guard.mjs               Read config/.env.production             env-file
+PASS  ALLOW  guard.mjs               npm test
+PASS  ALLOW  guard.mjs               git push origin feature/cancel-orders
+PASS  ALLOW  guard.mjs               rm dist/old-bundle.js
+PASS  ALLOW  guard.mjs               Read .env.example
+PASS  ALLOW  test-before-commit.mjs  git commit -m "Add order cancel"
+PASS  BLOCK  test-before-commit.mjs  git commit -m "WIP"                     tests failed
+
+13/13 hook cases behave as expected
